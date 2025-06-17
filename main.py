@@ -8,8 +8,8 @@ END_DATE        = "2025-06-29"       # departure (next morning)
 CHECK_EVERY_SEC = 300                # poll every 5 min (be nice)
 # -------------------------------------------
 
-PUSH_USER  = os.environ["uujy7e2wzzo8vvo6mozeot5t5hwfx7"]
-PUSH_TOKEN = os.environ["ar9j7bwysjw22ssbrxepmwvmphpjvy"]
+PUSH_USER  = os.environ["PUSHOVER_USER"]
+PUSH_TOKEN = os.environ["PUSHOVER_TOKEN"]
 
 def notify(msg):
     requests.post("https://api.pushover.net/1/messages.json",
